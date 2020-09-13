@@ -76,7 +76,6 @@ delAd.remove();
 
 const secondBookUl = books[0].querySelectorAll('li');
 
-secondBookUl[1].after(secondBookUl[0]);
 secondBookUl[9].after(secondBookUl[2]);
 secondBookUl[9].before(secondBookUl[7]);
 secondBookUl[3].after(secondBookUl[6]);
@@ -85,8 +84,8 @@ secondBookUl[6].after(secondBookUl[8]);
 const fifthBookUl = books[5].querySelector('ul'),
     fifthBookLi = books[5].querySelectorAll('li');
 
-fifthBookUl.append(fifthBookLi[1]);
 fifthBookUl.append(fifthBookLi[0]);
+fifthBookUl.append(fifthBookLi[1]);
 fifthBookUl.append(fifthBookLi[9]);
 fifthBookUl.append(fifthBookLi[3]);
 fifthBookUl.append(fifthBookLi[4]);
@@ -96,3 +95,11 @@ fifthBookUl.append(fifthBookLi[7]);
 fifthBookUl.append(fifthBookLi[5]);
 fifthBookUl.append(fifthBookLi[8]);
 fifthBookUl.append(fifthBookLi[10]);
+
+const sixthBookUl = books[2].querySelector('ul'),
+    sixthBookLi = books[2].querySelectorAll('li'),
+    li = document.createElement('li');
+
+li.textContent = 'Глава 8: За пределами ES6';
+sixthBookUl.append(li);
+sixthBookUl.append(sixthBookLi[9]);
