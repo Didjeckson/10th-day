@@ -81,3 +81,33 @@ secondBookUl[9].after(secondBookUl[2]);
 secondBookUl[9].before(secondBookUl[7]);
 secondBookUl[3].after(secondBookUl[6]);
 secondBookUl[6].after(secondBookUl[8]);
+
+const fifthBookUl = books[5].querySelector('ul'),
+    fifthBookLi = books[5].querySelectorAll('li');
+console.log(fifthBookUl);
+console.log(fifthBookLi);
+/* < ul >
+    <
+    li > Введение < /li> <
+    li > Предисловие < /li> <
+    li > Глава 4: Генераторы < /li> <
+    li > Глава 2: Колбеки < /li> <
+    li > Глава 3: Обещания < /li> <
+    li > Приложение A: Библиотека: asynquence < /li> <
+    li > Глава 5: Производительность программы < /li> <
+    li > Глава 6: Бенчмаркинг и настройка < /li> <
+    li > Приложение B: Расширенные асинхронные шаблоны < /li> <
+    li > Глава 1: Асинхронность: Сейчас и Тогда < /li> <
+    li > Приложение C: Благодарности! < /li> <
+    /ul> */
+fifthBookUl.append(fifthBookLi[1]);
+fifthBookUl.append(fifthBookLi[0]);
+fifthBookUl.append(fifthBookLi[9]);
+fifthBookUl.append(fifthBookLi[3]);
+fifthBookUl.append(fifthBookLi[4]);
+fifthBookUl.append(fifthBookLi[2]);
+fifthBookUl.append(fifthBookLi[6]);
+fifthBookUl.append(fifthBookLi[7]);
+fifthBookUl.append(fifthBookLi[5]);
+fifthBookUl.append(fifthBookLi[8]);
+fifthBookUl.append(fifthBookLi[10]);
