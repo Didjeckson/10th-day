@@ -73,3 +73,11 @@ aContent.textContent = 'Книга 3. this и Прототипы Объекто�
 
 const delAd = document.querySelector('.adv');
 delAd.remove();
+
+const secondBookUl = books[0].querySelectorAll('li');
+
+secondBookUl[1].after(secondBookUl[0]);
+secondBookUl[9].after(secondBookUl[2]);
+secondBookUl[9].before(secondBookUl[7]);
+secondBookUl[3].after(secondBookUl[6]);
+secondBookUl[6].after(secondBookUl[8]);
