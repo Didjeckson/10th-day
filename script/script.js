@@ -70,3 +70,6 @@ document.body.style.backgroundImage = ('url(./image/you-dont-know-js.jpg)');
 
 const aContent = books[4].querySelector('a');
 aContent.textContent = 'Книга 3. this и Прототипы Объектов';
+
+const delAd = document.querySelector('.adv');
+delAd.remove();
