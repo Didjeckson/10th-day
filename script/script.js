@@ -66,3 +66,4 @@ books[4].replaceWith(book5);
 books[5].replaceWith(book6);
 
 */
+document.body.style.backgroundImage = ('url(./image/you-dont-know-js.jpg)');
